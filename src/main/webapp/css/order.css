@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}.icons {
+    display: flex;
+}
+header {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column; /* Display icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: translateY(-2px);
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon span {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+/* Top Navigation Bar Styles */
+.top-nav {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Current Order Styles */
+.current-order {
+    margin-top: 20px;
+}
+
+.current-order .order {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Your Bill Styles */
+.your-bill {
+    margin-top: 20px;
+}
+
+.your-bill .bill-items {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.your-bill table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.your-bill table th, .your-bill table td {
+    border: 1px solid #ced4da;
+    padding: 8px;
+}
+
+.your-bill .tax-service, .your-bill .total {
+    margin-top: 20px;
+}
+
+.your-bill .tax-service p {
+    font-style: italic;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.your-bill .total h3 {
+    font-weight: bold;
+    color: #343a40;
+}

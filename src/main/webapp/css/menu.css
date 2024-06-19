@@ -1,0 +1,133 @@
+/* CSS for dashboard */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.welcome {
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon-image {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* CSS for menu grid */
+.h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Gap between menu items */
+}
+
+.menu-item {
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-chips a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-chips a:hover,
+.filter-chips a.active {
+    background-color: #ddd;
+}
+
+.menu-item img {
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.menu-item-details {
+    flex: 1;
+}
+
+.menu-item-details h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.menu-item-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.menu-item-button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item-button button:hover {
+    background-color: #45a049;
+}
+.menu-item-button button.added {
+    background-color: #45a049;
+}
